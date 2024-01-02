@@ -3,6 +3,8 @@ import "./App.css";
 import Layout from "./features/global/layout/Layout";
 import { CssBaseline } from "@mui/material";
 import Home from "./features/global/pages/Home";
+import DealInfo from "./features/acquisitions/pages/DealInfo";
+// import DealInfo from "./features/";
 
 
 function App() {
@@ -13,7 +15,7 @@ function App() {
         <Routes>
           <Route element={<Layout />}>
             <Route path="/" element={<Home />} />
-            <Route path="/home" element={<Home />} />
+            <Route path="/home" element={<DealInfo/>} />
             <Route path="/register" element={<Home />} />
           </Route>
         </Routes>

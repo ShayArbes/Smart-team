@@ -6,7 +6,7 @@ import RightNav from "./rightNavigation/RightNav";
 export default function Header() {
 
   return (
-    <Box sx={{ zIndex: "9", flexGrow: 1, minHeight: "0px" }}>
+    <Box sx={{ zIndex: "3", flexGrow: 1, minHeight: "0px" }}>
       <AppBar position="fixed" sx={{ backgroundColor: "#0000009f" }}>
         <Toolbar sx={{ display:"flex" ,justifyContent: "space-between" }}>
         <Logo/>
