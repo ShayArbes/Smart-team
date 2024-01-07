@@ -14,6 +14,7 @@ export interface Root {
   }
   
   export interface Deal {
+    id:string
     productName: string
     dealManagerId: string
     description: string
@@ -80,6 +81,7 @@ export interface Root {
     ],
     deals: [
       {
+        id:"1",
         productName: "מטבח מודרני",
         dealManagerId: "seller1",
         length: 250, // in cm
@@ -106,6 +108,475 @@ export interface Root {
         status: "in-progress",
       },
       {
+        id:"1",
+        productName: "מטבח מודרני",
+        dealManagerId: "seller1",
+        length: 250, // in cm
+        width: 300, // in cm  
+        height: 90, // in cm
+        depth: 60, // in cm
+        interiorMaterial: "עץ אגוז",
+        exteriorMaterial: "פורמייקה",
+        location: "תל אביב",
+        description: "מטבח מודרני בגווני לבן ואפור. המטבח כולל שיש אבן קיסר איכותי, ארונות מטבח תחתונים ועליונים בגימור לבן מבריק, יחידת  עם כיריים, תנור ומקרר משולבים.",
+        pictures: [
+          { imgUrl: "https://cdn.pixabay.com/photo/2016/12/30/07/59/kitchen-1940174_1280.jpg", imgDescription: "Image 1" },
+          { imgUrl: "https://example.com/dealA_image2.jpg", imgDescription: "Image 2" },
+        ],
+        priceOffers: [
+          { sellerID: "seller1", price: 50 },
+          { sellerID: "user1", price: 45 },
+        ],
+        
+        group: ["user1", "seller1"],
+        amount: { current: 10, target: 20 },
+        endDate: "2023-03-01T23:59:59Z",
+        createdDate: "2023-02-01T12:00:00Z",
+        status: "in-progress",
+      },      {
+        id:"1",
+        productName: "מטבח מודרני",
+        dealManagerId: "seller1",
+        length: 250, // in cm
+        width: 300, // in cm  
+        height: 90, // in cm
+        depth: 60, // in cm
+        interiorMaterial: "עץ אגוז",
+        exteriorMaterial: "פורמייקה",
+        location: "תל אביב",
+        description: "מטבח מודרני בגווני לבן ואפור. המטבח כולל שיש אבן קיסר איכותי, ארונות מטבח תחתונים ועליונים בגימור לבן מבריק, יחידת  עם כיריים, תנור ומקרר משולבים.",
+        pictures: [
+          { imgUrl: "https://cdn.pixabay.com/photo/2016/12/30/07/59/kitchen-1940174_1280.jpg", imgDescription: "Image 1" },
+          { imgUrl: "https://example.com/dealA_image2.jpg", imgDescription: "Image 2" },
+        ],
+        priceOffers: [
+          { sellerID: "seller1", price: 50 },
+          { sellerID: "user1", price: 45 },
+        ],
+        
+        group: ["user1", "seller1"],
+        amount: { current: 10, target: 20 },
+        endDate: "2023-03-01T23:59:59Z",
+        createdDate: "2023-02-01T12:00:00Z",
+        status: "in-progress",
+      },      {
+        id:"1",
+        productName: "מטבח מודרני",
+        dealManagerId: "seller1",
+        length: 250, // in cm
+        width: 300, // in cm  
+        height: 90, // in cm
+        depth: 60, // in cm
+        interiorMaterial: "עץ אגוז",
+        exteriorMaterial: "פורמייקה",
+        location: "תל אביב",
+        description: "מטבח מודרני בגווני לבן ואפור. המטבח כולל שיש אבן קיסר איכותי, ארונות מטבח תחתונים ועליונים בגימור לבן מבריק, יחידת  עם כיריים, תנור ומקרר משולבים.",
+        pictures: [
+          { imgUrl: "https://cdn.pixabay.com/photo/2016/12/30/07/59/kitchen-1940174_1280.jpg", imgDescription: "Image 1" },
+          { imgUrl: "https://example.com/dealA_image2.jpg", imgDescription: "Image 2" },
+        ],
+        priceOffers: [
+          { sellerID: "seller1", price: 50 },
+          { sellerID: "user1", price: 45 },
+        ],
+        
+        group: ["user1", "seller1"],
+        amount: { current: 10, target: 20 },
+        endDate: "2023-03-01T23:59:59Z",
+        createdDate: "2023-02-01T12:00:00Z",
+        status: "in-progress",
+      },      {
+        id:"2",
+        productName: "מטבח מודרני",
+        dealManagerId: "seller1",
+        length: 250, // in cm
+        width: 300, // in cm  
+        height: 90, // in cm
+        depth: 60, // in cm
+        interiorMaterial: "עץ אגוז",
+        exteriorMaterial: "פורמייקה",
+        location: "תל אביב",
+        description: "מטבח מודרני בגווני לבן ואפור. המטבח כולל שיש אבן קיסר איכותי, ארונות מטבח תחתונים ועליונים בגימור לבן מבריק, יחידת  עם כיריים, תנור ומקרר משולבים.",
+        pictures: [
+          { imgUrl: "https://cdn.pixabay.com/photo/2016/12/30/07/59/kitchen-1940174_1280.jpg", imgDescription: "Image 1" },
+          { imgUrl: "https://example.com/dealA_image2.jpg", imgDescription: "Image 2" },
+        ],
+        priceOffers: [
+          { sellerID: "seller1", price: 50 },
+          { sellerID: "user1", price: 45 },
+        ],
+        
+        group: ["user1", "seller1"],
+        amount: { current: 10, target: 20 },
+        endDate: "2023-03-01T23:59:59Z",
+        createdDate: "2023-02-01T12:00:00Z",
+        status: "in-progress",
+      },      {
+        id:"3",
+        productName: "מטבח מודרני",
+        dealManagerId: "seller1",
+        length: 250, // in cm
+        width: 300, // in cm  
+        height: 90, // in cm
+        depth: 60, // in cm
+        interiorMaterial: "עץ אגוז",
+        exteriorMaterial: "פורמייקה",
+        location: "תל אביב",
+        description: "מטבח מודרני בגווני לבן ואפור. המטבח כולל שיש אבן קיסר איכותי, ארונות מטבח תחתונים ועליונים בגימור לבן מבריק, יחידת  עם כיריים, תנור ומקרר משולבים.",
+        pictures: [
+          { imgUrl: "https://cdn.pixabay.com/photo/2016/12/30/07/59/kitchen-1940174_1280.jpg", imgDescription: "Image 1" },
+          { imgUrl: "https://example.com/dealA_image2.jpg", imgDescription: "Image 2" },
+        ],
+        priceOffers: [
+          { sellerID: "seller1", price: 50 },
+          { sellerID: "user1", price: 45 },
+        ],
+        
+        group: ["user1", "seller1"],
+        amount: { current: 10, target: 20 },
+        endDate: "2023-03-01T23:59:59Z",
+        createdDate: "2023-02-01T12:00:00Z",
+        status: "in-progress",
+      },      {
+        id:"4",
+        productName: "מטבח מודרני",
+        dealManagerId: "seller1",
+        length: 250, // in cm
+        width: 300, // in cm  
+        height: 90, // in cm
+        depth: 60, // in cm
+        interiorMaterial: "עץ אגוז",
+        exteriorMaterial: "פורמייקה",
+        location: "תל אביב",
+        description: "מטבח מודרני בגווני לבן ואפור. המטבח כולל שיש אבן קיסר איכותי, ארונות מטבח תחתונים ועליונים בגימור לבן מבריק, יחידת  עם כיריים, תנור ומקרר משולבים.",
+        pictures: [
+          { imgUrl: "https://cdn.pixabay.com/photo/2016/12/30/07/59/kitchen-1940174_1280.jpg", imgDescription: "Image 1" },
+          { imgUrl: "https://example.com/dealA_image2.jpg", imgDescription: "Image 2" },
+        ],
+        priceOffers: [
+          { sellerID: "seller1", price: 50 },
+          { sellerID: "user1", price: 45 },
+        ],
+        
+        group: ["user1", "seller1"],
+        amount: { current: 10, target: 20 },
+        endDate: "2023-03-01T23:59:59Z",
+        createdDate: "2023-02-01T12:00:00Z",
+        status: "in-progress",
+      },      {
+        id:"5",
+        productName: "מטבח מודרני",
+        dealManagerId: "seller1",
+        length: 250, // in cm
+        width: 300, // in cm  
+        height: 90, // in cm
+        depth: 60, // in cm
+        interiorMaterial: "עץ אגוז",
+        exteriorMaterial: "פורמייקה",
+        location: "תל אביב",
+        description: "מטבח מודרני בגווני לבן ואפור. המטבח כולל שיש אבן קיסר איכותי, ארונות מטבח תחתונים ועליונים בגימור לבן מבריק, יחידת  עם כיריים, תנור ומקרר משולבים.",
+        pictures: [
+          { imgUrl: "https://cdn.pixabay.com/photo/2016/12/30/07/59/kitchen-1940174_1280.jpg", imgDescription: "Image 1" },
+          { imgUrl: "https://example.com/dealA_image2.jpg", imgDescription: "Image 2" },
+        ],
+        priceOffers: [
+          { sellerID: "seller1", price: 50 },
+          { sellerID: "user1", price: 45 },
+        ],
+        
+        group: ["user1", "seller1"],
+        amount: { current: 10, target: 20 },
+        endDate: "2023-03-01T23:59:59Z",
+        createdDate: "2023-02-01T12:00:00Z",
+        status: "in-progress",
+      },      {
+        id:"6",
+        productName: "מטבח מודרני",
+        dealManagerId: "seller1",
+        length: 250, // in cm
+        width: 300, // in cm  
+        height: 90, // in cm
+        depth: 60, // in cm
+        interiorMaterial: "עץ אגוז",
+        exteriorMaterial: "פורמייקה",
+        location: "תל אביב",
+        description: "מטבח מודרני בגווני לבן ואפור. המטבח כולל שיש אבן קיסר איכותי, ארונות מטבח תחתונים ועליונים בגימור לבן מבריק, יחידת  עם כיריים, תנור ומקרר משולבים.",
+        pictures: [
+          { imgUrl: "https://cdn.pixabay.com/photo/2016/12/30/07/59/kitchen-1940174_1280.jpg", imgDescription: "Image 1" },
+          { imgUrl: "https://example.com/dealA_image2.jpg", imgDescription: "Image 2" },
+        ],
+        priceOffers: [
+          { sellerID: "seller1", price: 50 },
+          { sellerID: "user1", price: 45 },
+        ],
+        
+        group: ["user1", "seller1"],
+        amount: { current: 10, target: 20 },
+        endDate: "2023-03-01T23:59:59Z",
+        createdDate: "2023-02-01T12:00:00Z",
+        status: "in-progress",
+      },      {
+        id:"7",
+        productName: "מטבח מודרני",
+        dealManagerId: "seller1",
+        length: 250, // in cm
+        width: 300, // in cm  
+        height: 90, // in cm
+        depth: 60, // in cm
+        interiorMaterial: "עץ אגוז",
+        exteriorMaterial: "פורמייקה",
+        location: "תל אביב",
+        description: "מטבח מודרני בגווני לבן ואפור. המטבח כולל שיש אבן קיסר איכותי, ארונות מטבח תחתונים ועליונים בגימור לבן מבריק, יחידת  עם כיריים, תנור ומקרר משולבים.",
+        pictures: [
+          { imgUrl: "https://cdn.pixabay.com/photo/2016/12/30/07/59/kitchen-1940174_1280.jpg", imgDescription: "Image 1" },
+          { imgUrl: "https://example.com/dealA_image2.jpg", imgDescription: "Image 2" },
+        ],
+        priceOffers: [
+          { sellerID: "seller1", price: 50 },
+          { sellerID: "user1", price: 45 },
+        ],
+        
+        group: ["user1", "seller1"],
+        amount: { current: 10, target: 20 },
+        endDate: "2023-03-01T23:59:59Z",
+        createdDate: "2023-02-01T12:00:00Z",
+        status: "in-progress",
+      },      {
+        id:"8",
+        productName: "מטבח מודרני",
+        dealManagerId: "seller1",
+        length: 250, // in cm
+        width: 300, // in cm  
+        height: 90, // in cm
+        depth: 60, // in cm
+        interiorMaterial: "עץ אגוז",
+        exteriorMaterial: "פורמייקה",
+        location: "תל אביב",
+        description: "מטבח מודרני בגווני לבן ואפור. המטבח כולל שיש אבן קיסר איכותי, ארונות מטבח תחתונים ועליונים בגימור לבן מבריק, יחידת  עם כיריים, תנור ומקרר משולבים.",
+        pictures: [
+          { imgUrl: "https://cdn.pixabay.com/photo/2016/12/30/07/59/kitchen-1940174_1280.jpg", imgDescription: "Image 1" },
+          { imgUrl: "https://example.com/dealA_image2.jpg", imgDescription: "Image 2" },
+        ],
+        priceOffers: [
+          { sellerID: "seller1", price: 50 },
+          { sellerID: "user1", price: 45 },
+        ],
+        
+        group: ["user1", "seller1"],
+        amount: { current: 10, target: 20 },
+        endDate: "2023-03-01T23:59:59Z",
+        createdDate: "2023-02-01T12:00:00Z",
+        status: "in-progress",
+      },      {
+        id:"9",
+        productName: "מטבח מודרני",
+        dealManagerId: "seller1",
+        length: 250, // in cm
+        width: 300, // in cm  
+        height: 90, // in cm
+        depth: 60, // in cm
+        interiorMaterial: "עץ אגוז",
+        exteriorMaterial: "פורמייקה",
+        location: "תל אביב",
+        description: "מטבח מודרני בגווני לבן ואפור. המטבח כולל שיש אבן קיסר איכותי, ארונות מטבח תחתונים ועליונים בגימור לבן מבריק, יחידת  עם כיריים, תנור ומקרר משולבים.",
+        pictures: [
+          { imgUrl: "https://cdn.pixabay.com/photo/2016/12/30/07/59/kitchen-1940174_1280.jpg", imgDescription: "Image 1" },
+          { imgUrl: "https://example.com/dealA_image2.jpg", imgDescription: "Image 2" },
+        ],
+        priceOffers: [
+          { sellerID: "seller1", price: 50 },
+          { sellerID: "user1", price: 45 },
+        ],
+        
+        group: ["user1", "seller1"],
+        amount: { current: 10, target: 20 },
+        endDate: "2023-03-01T23:59:59Z",
+        createdDate: "2023-02-01T12:00:00Z",
+        status: "in-progress",
+      },      {
+        id:"10",
+        productName: "מטבח מודרני",
+        dealManagerId: "seller1",
+        length: 250, // in cm
+        width: 300, // in cm  
+        height: 90, // in cm
+        depth: 60, // in cm
+        interiorMaterial: "עץ אגוז",
+        exteriorMaterial: "פורמייקה",
+        location: "תל אביב",
+        description: "מטבח מודרני בגווני לבן ואפור. המטבח כולל שיש אבן קיסר איכותי, ארונות מטבח תחתונים ועליונים בגימור לבן מבריק, יחידת  עם כיריים, תנור ומקרר משולבים.",
+        pictures: [
+          { imgUrl: "https://cdn.pixabay.com/photo/2016/12/30/07/59/kitchen-1940174_1280.jpg", imgDescription: "Image 1" },
+          { imgUrl: "https://example.com/dealA_image2.jpg", imgDescription: "Image 2" },
+        ],
+        priceOffers: [
+          { sellerID: "seller1", price: 50 },
+          { sellerID: "user1", price: 45 },
+        ],
+        
+        group: ["user1", "seller1"],
+        amount: { current: 10, target: 20 },
+        endDate: "2023-03-01T23:59:59Z",
+        createdDate: "2023-02-01T12:00:00Z",
+        status: "in-progress",
+      },      {
+        id:"12",
+        productName: "מטבח מודרני",
+        dealManagerId: "seller1",
+        length: 250, // in cm
+        width: 300, // in cm  
+        height: 90, // in cm
+        depth: 60, // in cm
+        interiorMaterial: "עץ אגוז",
+        exteriorMaterial: "פורמייקה",
+        location: "תל אביב",
+        description: "מטבח מודרני בגווני לבן ואפור. המטבח כולל שיש אבן קיסר איכותי, ארונות מטבח תחתונים ועליונים בגימור לבן מבריק, יחידת  עם כיריים, תנור ומקרר משולבים.",
+        pictures: [
+          { imgUrl: "https://cdn.pixabay.com/photo/2016/12/30/07/59/kitchen-1940174_1280.jpg", imgDescription: "Image 1" },
+          { imgUrl: "https://example.com/dealA_image2.jpg", imgDescription: "Image 2" },
+        ],
+        priceOffers: [
+          { sellerID: "seller1", price: 50 },
+          { sellerID: "user1", price: 45 },
+        ],
+        
+        group: ["user1", "seller1"],
+        amount: { current: 10, target: 20 },
+        endDate: "2023-03-01T23:59:59Z",
+        createdDate: "2023-02-01T12:00:00Z",
+        status: "in-progress",
+      },      {
+        id:"13",
+        productName: "מטבח מודרני",
+        dealManagerId: "seller1",
+        length: 250, // in cm
+        width: 300, // in cm  
+        height: 90, // in cm
+        depth: 60, // in cm
+        interiorMaterial: "עץ אגוז",
+        exteriorMaterial: "פורמייקה",
+        location: "תל אביב",
+        description: "מטבח מודרני בגווני לבן ואפור. המטבח כולל שיש אבן קיסר איכותי, ארונות מטבח תחתונים ועליונים בגימור לבן מבריק, יחידת  עם כיריים, תנור ומקרר משולבים.",
+        pictures: [
+          { imgUrl: "https://cdn.pixabay.com/photo/2016/12/30/07/59/kitchen-1940174_1280.jpg", imgDescription: "Image 1" },
+          { imgUrl: "https://example.com/dealA_image2.jpg", imgDescription: "Image 2" },
+        ],
+        priceOffers: [
+          { sellerID: "seller1", price: 50 },
+          { sellerID: "user1", price: 45 },
+        ],
+        
+        group: ["user1", "seller1"],
+        amount: { current: 10, target: 20 },
+        endDate: "2023-03-01T23:59:59Z",
+        createdDate: "2023-02-01T12:00:00Z",
+        status: "in-progress",
+      },      {
+        id:"14",
+        productName: "מטבח מודרני",
+        dealManagerId: "seller1",
+        length: 250, // in cm
+        width: 300, // in cm  
+        height: 90, // in cm
+        depth: 60, // in cm
+        interiorMaterial: "עץ אגוז",
+        exteriorMaterial: "פורמייקה",
+        location: "תל אביב",
+        description: "מטבח מודרני בגווני לבן ואפור. המטבח כולל שיש אבן קיסר איכותי, ארונות מטבח תחתונים ועליונים בגימור לבן מבריק, יחידת  עם כיריים, תנור ומקרר משולבים.",
+        pictures: [
+          { imgUrl: "https://cdn.pixabay.com/photo/2016/12/30/07/59/kitchen-1940174_1280.jpg", imgDescription: "Image 1" },
+          { imgUrl: "https://example.com/dealA_image2.jpg", imgDescription: "Image 2" },
+        ],
+        priceOffers: [
+          { sellerID: "seller1", price: 50 },
+          { sellerID: "user1", price: 45 },
+        ],
+        
+        group: ["user1", "seller1"],
+        amount: { current: 10, target: 20 },
+        endDate: "2023-03-01T23:59:59Z",
+        createdDate: "2023-02-01T12:00:00Z",
+        status: "in-progress",
+      },      {
+        id:"15",
+        productName: "מטבח מודרני",
+        dealManagerId: "seller1",
+        length: 250, // in cm
+        width: 300, // in cm  
+        height: 90, // in cm
+        depth: 60, // in cm
+        interiorMaterial: "עץ אגוז",
+        exteriorMaterial: "פורמייקה",
+        location: "תל אביב",
+        description: "מטבח מודרני בגווני לבן ואפור. המטבח כולל שיש אבן קיסר איכותי, ארונות מטבח תחתונים ועליונים בגימור לבן מבריק, יחידת  עם כיריים, תנור ומקרר משולבים.",
+        pictures: [
+          { imgUrl: "https://cdn.pixabay.com/photo/2016/12/30/07/59/kitchen-1940174_1280.jpg", imgDescription: "Image 1" },
+          { imgUrl: "https://example.com/dealA_image2.jpg", imgDescription: "Image 2" },
+        ],
+        priceOffers: [
+          { sellerID: "seller1", price: 50 },
+          { sellerID: "user1", price: 45 },
+        ],
+        
+        group: ["user1", "seller1"],
+        amount: { current: 10, target: 20 },
+        endDate: "2023-03-01T23:59:59Z",
+        createdDate: "2023-02-01T12:00:00Z",
+        status: "in-progress",
+      },      {
+        id:"16",
+        productName: "מטבח מודרני",
+        dealManagerId: "seller1",
+        length: 250, // in cm
+        width: 300, // in cm  
+        height: 90, // in cm
+        depth: 60, // in cm
+        interiorMaterial: "עץ אגוז",
+        exteriorMaterial: "פורמייקה",
+        location: "תל אביב",
+        description: "מטבח מודרני בגווני לבן ואפור. המטבח כולל שיש אבן קיסר איכותי, ארונות מטבח תחתונים ועליונים בגימור לבן מבריק, יחידת  עם כיריים, תנור ומקרר משולבים.",
+        pictures: [
+          { imgUrl: "https://cdn.pixabay.com/photo/2016/12/30/07/59/kitchen-1940174_1280.jpg", imgDescription: "Image 1" },
+          { imgUrl: "https://example.com/dealA_image2.jpg", imgDescription: "Image 2" },
+        ],
+        priceOffers: [
+          { sellerID: "seller1", price: 50 },
+          { sellerID: "user1", price: 45 },
+        ],
+        
+        group: ["user1", "seller1"],
+        amount: { current: 10, target: 20 },
+        endDate: "2023-03-01T23:59:59Z",
+        createdDate: "2023-02-01T12:00:00Z",
+        status: "in-progress",
+      },      {
+        id:"17",
+        productName: "מטבח מודרני",
+        dealManagerId: "seller1",
+        length: 250, // in cm
+        width: 300, // in cm  
+        height: 90, // in cm
+        depth: 60, // in cm
+        interiorMaterial: "עץ אגוז",
+        exteriorMaterial: "פורמייקה",
+        location: "תל אביב",
+        description: "מטבח מודרני בגווני לבן ואפור. המטבח כולל שיש אבן קיסר איכותי, ארונות מטבח תחתונים ועליונים בגימור לבן מבריק, יחידת  עם כיריים, תנור ומקרר משולבים.",
+        pictures: [
+          { imgUrl: "https://cdn.pixabay.com/photo/2016/12/30/07/59/kitchen-1940174_1280.jpg", imgDescription: "Image 1" },
+          { imgUrl: "https://example.com/dealA_image2.jpg", imgDescription: "Image 2" },
+        ],
+        priceOffers: [
+          { sellerID: "seller1", price: 50 },
+          { sellerID: "user1", price: 45 },
+        ],
+        
+        group: ["user1", "seller1"],
+        amount: { current: 10, target: 20 },
+        endDate: "2023-03-01T23:59:59Z",
+        createdDate: "2023-02-01T12:00:00Z",
+        status: "in-progress",
+      },      {
+        id:"18",
         productName: "מטבח מודרני",
         dealManagerId: "seller1",
         length: 250, // in cm

@@ -41,9 +41,11 @@ export const Background = styled.div<StyledBoxProps>`
   background-image: url(${props => props.img});
   background-position: center;
   background-size: cover;
+  z-index: -1;
   background-repeat: no-repeat;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
   align-items: center;
+  
 `;

@@ -1,189 +1,95 @@
-// import { AppBar, Box, Button } from "@mui/material";
-// import React from "react";
 
-// function SubNav() {
-//   return (
-//     // <Box sx={{width:"40%" , background:"red", position: "sticky", top: "100px"}}>
-//     <Box sx={{ display: "flex", justifyContent: "center" }}>
-//       <Box
-//         sx={{
-//           paddingTop: "8px",
-//           paddingBottom: "8px",
-//           margin: "74px 24px",
-//           width: "57%",
-//           position: "fixed",
-//           zIndex: "10",
-//           opacity: "1",
-//           background: "rgb(255 255 255 / 67%);",
-//           color: "rgb(52, 71, 103)",
-//           borderRadius: "0.75rem",
-//           boxShadow: "rgba(0, 0, 0, 0.1) 0rem 0.25rem 0.375rem -0.0625rem, rgba(0, 0, 0, 0.06) 0rem 0.125rem 0.25rem -0.0625rem",
-
-//         }}
-//       >
-//         <Box
-//           sx={{
-//             display: "flex",
-//             WebkitBoxPack: "justify",
-//             justifyContent: "space-between",
-//             WebkitBoxAlign: "center",
-//             alignItems: "center",
-//             opacity: 1,
-//             background: "transparent",
-//             color: "rgb(52, 71, 103)",
-//             boxShadow: "none",
-//           }}
-//         >
-//             <Box sx={{margin: "2px 2%",}}>
-//                 smart team
-//             </Box>
-        
-//           <Box sx={{display:"flex" ,    width: "40%"}}>
-
-//           <Button
-//             sx={{
-//               "&:hover": {
-//                 color: "black",
-//               },
-//               background: "#d87d0c",
-//               margin: "2px 2%",
-//               color: "#ffffff",
-//             }}
-//           >
-//             בנייה
-//           </Button>
-//           <Button
-//             sx={{
-//               "&:hover": {
-//                 color: "black",
-//               },
-//               background: "#d87d0c",
-//               margin: "2px 2%",
-//               color: "#ffffff",
-//             }}
-//           >
-//             ריהוט
-//           </Button>
-//           <Button
-//             sx={{
-//               "&:hover": {
-//                 color: "black",
-//               },
-//               background: "#d87d0c",
-//               margin: "2px 2%",
-//               color: "#ffffff",
-//             }}
-//           >
-//             אחר
-//           </Button>
-
-//           </Box>
-//           <Box sx={{display:"flex" ,    width: "40%"}}>
-
-//           <Button
-//             sx={{
-//               "&:hover": {
-//                 color: "black",
-//               },
-//               background: "#44b700",
-//               margin: "2px 2%",
-//               color: "#ffffff",
-//             }}
-//           >
-//             אודות
-//           </Button>
-//           <Button
-//             sx={{
-//               "&:hover": {
-//                 color: "black",
-//               },
-//               background: "#44b700",
-//               margin: "2px 2%",
-//               color: "#ffffff",
-//             }}
-//           >
-//             חיפוש דיל
-//           </Button>
-//           <Button
-//             sx={{
-//               "&:hover": {
-//                 color: "black",
-//               },
-//               background: "#44b700",
-//               margin: "2px 2%",
-//               color: "#ffffff",
-//             }}
-//           >
-//             פתח קבוצת רכישה
-//           </Button>
-
-//           </Box>
-//         </Box>
-//       </Box>
-//     </Box>
-//   );
-// }
-
-// export default SubNav;
-import styled from 'styled-components';
-
+import styled from "styled-components";
+import GridViewOutlinedIcon from "@mui/icons-material/GridViewOutlined";
+import SearchOutlinedIcon from '@mui/icons-material/SearchOutlined';
+import AddIcon from '@mui/icons-material/Add';
+const Contener = styled.div`
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  @media (max-width: 768px) {
+    display: none;
+  }
+`;
 const StyledBox = styled.div`
   padding-top: 8px;
-  padding-bottom: 8px; 
-  margin: 74px 24px;
-  width: 57%;
+  padding-bottom: 8px;
+  width: 60%;
+  top: 40px;
   position: fixed;
   z-index: 10;
   opacity: 1;
   background: rgb(255 255 255 / 67%);
   color: rgb(52, 71, 103);
   border-radius: 0.75rem;
-  box-shadow: rgba(0, 0, 0, 0.1) 0rem 0.25rem 0.375rem -0.0625rem, 
-              rgba(0, 0, 0, 0.06) 0rem 0.125rem 0.25rem -0.0625rem;
+  box-shadow: rgba(0, 0, 0, 0.1) 0rem 0.25rem 0.375rem -0.0625rem,
+    rgba(0, 0, 0, 0.06) 0rem 0.125rem 0.25rem -0.0625rem;
 `;
 
 const InnerBox = styled.div`
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   opacity: 1;
   background: transparent;
   color: rgb(52, 71, 103);
-  box-shadow: none; 
-`;
+  box-shadow: none;
+`; 
+interface Btn {
+  backgroundColor?: string;
+  fontSize?: string;
+  color?:string
+  margin?: string;
+  backgroundColorHover?: string;
+  borderRadius?: string;
+  padding?: string;
+  colorActive?: string;
+}
 
-const StyledButton = styled.button`
+const StyledButton = styled.button<Btn>`
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  
   &:hover {
     color: black;
+    transition-duration: 0.4s;
+    background:  rgba(212, 212, 212, 0.3);;
+    cursor: pointer;
   }
-  background: ${props => props.color};
+  background-color: ${({ backgroundColor }) => backgroundColor || "#ffffff00"};
+  color:  ${({ color }) => color || "black"};
   margin: 2px 2%;
-  color: ${props => (props.color === '#44b700' ? '#ffffff' : '#ffffff')}; 
   border: 0px;
-  border-radius: 3px;
-  padding: 0.25em 1em;
+  width: 120px;
+  border-radius: 9px;
+  padding: 0.5em 1em;
+  cursor: pointer;
 `;
 
+const GroupBut = styled.div`
+  display: flex;
+`;
 export default function SubNav() {
   return (
-    <StyledBox>
-      <InnerBox>
+    <Contener>
+      <StyledBox>
+        <InnerBox>
 
-        <div>smart team</div>
 
-        <div>
-          <StyledButton color="#d87d0c">בנייה</StyledButton>
-          <StyledButton color="#d87d0c">ריהוט</StyledButton>
-          <StyledButton color="#d87d0c">אחר</StyledButton>
-        </div>
-
-        <div>
-          <StyledButton color="#44b700">אודות</StyledButton>
-          <StyledButton color="#44b700">חיפוש דיל</StyledButton>  
-          <StyledButton color="#44b700">פתח קבוצת רכישה</StyledButton>
-        </div>
-
-      </InnerBox>
-    </StyledBox>
+          <GroupBut>
+            <StyledButton 
+            >כל הדילים<GridViewOutlinedIcon />
+            </StyledButton>
+            <StyledButton 
+            >חיפוש דיל <SearchOutlinedIcon/>
+            </StyledButton>
+            <StyledButton color="white" backgroundColor ={"#d87d0c"}>
+              צור דיל <AddIcon/>
+            </StyledButton>
+          </GroupBut>
+        </InnerBox>
+      </StyledBox>
+    </Contener>
   );
 }

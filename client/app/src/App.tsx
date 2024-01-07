@@ -4,6 +4,9 @@ import Layout from "./features/global/layout/Layout";
 import { CssBaseline } from "@mui/material";
 import Home from "./features/global/pages/Home";
 import DealInfo from "./features/acquisitions/pages/DealInfo";
+import { IndexContextProvider } from "./features/acquisitions/Context/ContextProvider";
+import Deals from "./features/acquisitions/pages/Deals";
+import HoverableDropdown from "./features/acquisitions/pages/HoverableDropdown";
 // import DealInfo from "./features/";
 
 
@@ -11,15 +14,20 @@ function App() {
   return (
     <>
       <CssBaseline />
+      <IndexContextProvider>
       <BrowserRouter>
         <Routes>
           <Route element={<Layout />}>
             <Route path="/" element={<Home />} />
+            <Route path="/t" element={<HoverableDropdown />} />
+            
             <Route path="/home" element={<DealInfo/>} />
-            <Route path="/register" element={<Home />} />
+            
+            <Route path="/a" element={< Deals />} />
           </Route>
         </Routes>
       </BrowserRouter>
+      </IndexContextProvider>
     </>
   );
 }
